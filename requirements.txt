@@ -5,3 +5,4 @@ streamlit-option-menu==0.3.2
 scikit-learn==1.2.0
 cloudpickle==2.0.0
 pickleshare==0.7.5
+python==3.9
