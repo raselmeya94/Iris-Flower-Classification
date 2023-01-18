@@ -9,10 +9,11 @@ import numpy as np
 import streamlit as st
 import pickle
 import cloudpickle as cp
-dt=cp.load(open('https://github.com/raselmeya94/Iris-Flower-Classification/blob/main/dt_model.sav','rb'))
-log=cp.load(open('https://github.com/raselmeya94/Iris-Flower-Classification/blob/main/log_model.sav','rb'))
-svm=cp.load(open('https://github.com/raselmeya94/Iris-Flower-Classification/blob/main/svc_model.sav','rb'))
-kn=cp.load(open('https://github.com/raselmeya94/Iris-Flower-Classification/blob/main/kn_model.sav','rb'))
+from urllib.request import urlopen
+dt=cp.load(urlopen('https://github.com/raselmeya94/Iris-Flower-Classification/blob/main/dt_model.sav','rb'))
+log=cp.load(urlopen('https://github.com/raselmeya94/Iris-Flower-Classification/blob/main/log_model.sav','rb'))
+svm=cp.load(urlopen('https://github.com/raselmeya94/Iris-Flower-Classification/blob/main/svc_model.sav','rb'))
+kn=cp.load(urlopen('https://github.com/raselmeya94/Iris-Flower-Classification/blob/main/kn_model.sav','rb'))
 
 def main():
     st.title("")
